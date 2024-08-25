@@ -1,19 +1,36 @@
 project:
   type: website
+  output-dir: docs
+
+execute:
+  freeze: auto  # re-render only when source changes
 
 website:
-  title: "POLS-3604"
+  title: "Congress in Theory & Practice"
+  favicon: img/favicon_io/favicon.ico
   navbar:
-    left:
+    background: '#000E2F'
+    # left:
+    #   - href: index.qmd
+    #     text: Home
+    #   - about.qmd
+    right: 
       - href: index.qmd
         text: Home
-      - about.qmd
-
+      - href: https://byersjs.github.io/POLS-3604-Syllabus/
+        text: "Syllabus"
+      - href: https://huskyct.uconn.edu
+        icon: mortarboard-fill
+      - href: https://github.com/byersjs/POLS-3604
+        icon: github
+      
 format:
   html:
     theme: cosmo
     css: styles.css
     toc: true
+    toc-location: right
 
 editor: visual
+
 
